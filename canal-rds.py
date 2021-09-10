@@ -7,8 +7,8 @@ import json
 
 def canal_csv():
     conn = pymysql.connect(
-        host='rm-2zet04367c01q5e0j.mysql.rds.aliyuncs.com',
-        user='jindi', password='J1ndiCanal',
+        host='',
+        user='', password='',
         database='canal_manager',
         charset='utf8')
 
