@@ -5,7 +5,7 @@ from aliyunsdkcore.auth.credentials import AccessKeyCredential
 from aliyunsdkcore.auth.credentials import StsTokenCredential
 from aliyunsdkecs.request.v20140526.DescribeInstancesRequest import DescribeInstancesRequest
 
-credentials = AccessKeyCredential('LTAI5tGD5HFgCGaMMxvL5oRD', 'G56NOrfS8UhTO8cFpPjIgFMZMKhcEf')
+credentials = AccessKeyCredential('ak', 'ak')
 # use STS Token
 # credentials = StsTokenCredential('<your-access-key-id>', '<your-access-key-secret>', '<your-sts-token>');
 client = AcsClient(region_id='cn-beijing', credential=credentials)
