@@ -3,8 +3,8 @@ import time
 import random
 
 conn = pymysql.connect(
-    host='rm-2ze0806f9c96lksh8120.mysql.rds.aliyuncs.com',
-    user='jindi_yunwei_rw', password='FXLXCxKyOn63A9l',
+    host='xxx',
+    user='xxx', password='xxx',
     database='liuguangcheng',
     charset='utf8')
 conn.autocommit(1)
