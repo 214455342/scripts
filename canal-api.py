@@ -5,13 +5,13 @@ import xlwt
 
 s = requests.Session()
 s.headers.update({'Content-Type': 'application/json'})
-req_data = {"username": "admin", "password": "TYC123"}
-r1 = s.post("http://172.24.115.208:8089/api/v1/user/login", data=json.dumps(req_data))
+req_data = {"username": "xxx", "password": "xxx"}
+r1 = s.post("http://xxx:8089/api/v1/user/login", data=json.dumps(req_data))
 resp_data = r1.json()
 token = resp_data.get('data').get('token')
 print(token)
 s.headers.update({'X-Token': token})
-r2 = s.get("http://172.24.115.208:8089/api/v1/canal/instances?name=&clusterServerId=&page=1&size=1000")
+r2 = s.get("http://xxx:8089/api/v1/canal/instances?name=&clusterServerId=&page=1&size=1000")
 resp2_data = r2.json()
 instances_li = []
 for i in resp2_data.get('data').get('items'):
